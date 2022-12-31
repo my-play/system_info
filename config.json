@@ -1,0 +1,21 @@
+{
+
+  "path_to_Chrome_driver": "C:\\Temp\\chromedriver.exe",
+  "url":"https://www.tutorialspoint.com/linux_terminal_online.php",
+  "sensor_ip": "10.160.82.108",
+  "system_info": {
+    "clear" : "clear",
+    "system_os": "cat /etc/os-release | grep NAME",
+    "system_cpu": {
+      "model_name":"lscpu | grep 'Model name' | cut -f 2 -d \":\" | awk '{$1=$1}1'",
+      "vendor_id": "lscpu | grep 'Vendor' | cut -f 2 -d \":\" | awk '{$1=$1}1'"
+    },
+    "sata": "lsblk -d -e 7 -o ROTA,DISC-MAX | grep -v ROTA",
+    "pci_list": "lspci",
+    "last_login": "last | awk '{ print $4, $5, $6, $7, $8 }'",
+    "current_time" : "date",
+    "cat_help": "cat --help"
+  }
+
+
+}

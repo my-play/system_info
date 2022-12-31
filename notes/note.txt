@@ -1,0 +1,4 @@
+# Memory Utilization (%) = 100 -(((MemFree + Buffers + Cached)*100)/maxValue)
+
+
+#https://docs.pytest.org/en/6.2.x/parametrize.html
